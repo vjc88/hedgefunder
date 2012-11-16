@@ -1,4 +1,7 @@
 Hedgefunder::Application.routes.draw do
+  resources :ads
+
+
   authenticated :user do
     root :to => 'home#index'
   end
