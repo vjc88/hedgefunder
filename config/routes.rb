@@ -1,9 +1,10 @@
 Hedgefunder::Application.routes.draw do
-  resources :ads
+
 
 
   authenticated :user do
     root :to => 'home#index'
+    resources :ads    
   end
   root :to => "home#index"
   devise_for :users

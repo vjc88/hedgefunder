@@ -5,26 +5,30 @@
 
 <div class="container">
 	<div class="hero-unit">
-		<h1>Hello, world!</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+		<h1>Welcome to Hedgefunder!</h1>
+        <p>With the Jumpstart Our Business Startup Act now passed into law, buyside firms such as hedge funds, private equity firms, asset managers and venture capitalists can now legally advertise their respective companies. What's even more important is that these companies can now also solicit the public for private investments, something that was illegal prior to the JOBS act. Sign up now and start advertising on the largest, most profound financial websites and newspapers in the world, leave the hassles of marketing to us so you can focus on what you do best: create alpha for your clients. </p>
+        <p><a class="btn btn-primary btn-large">Sign Up &raquo;</a></p>
+		<%= link_to 'Sign up', new_user_registration_path %>
 	</div>
 	
 	<div class="row">
         <div class="span4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <h2>Ads</h2>
+          <p>Click here to check out the places to advertise your hedgefund.</p>
           <p><a class="btn" href="#">View details &raquo;</a></p>
+		  <%= link_to 'Ads', ads_path %> (must be logged in)
         </div>
         <div class="span4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <h2>Contact Us</h2>
+          <p>Worried about letting a website do your marketing? Contact us by clicking here</p>
           <p><a class="btn" href="#">View details &raquo;</a></p>
+		  <%= link_to 'Contact Us', contact_us_path %>
        </div>
         <div class="span4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <h2>Login</h2>
+          <p>Click here to log into your account today.</p>
           <p><a class="btn" href="#">View details &raquo;</a></p>
+		  <%= link_to 'Login', new_user_session_path %> 
         </div>
       </div>
 

@@ -33,9 +33,9 @@ class AdsController < ApplicationController
   end
 
   # GET /ads/1/edit
-  def edit
+ def edit
     @ad = Ad.find(params[:id])
-  end
+  end 
 
   # POST /ads
   # POST /ads.json
